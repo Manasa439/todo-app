@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #ffffff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-section input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.input-section button {
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background: #43a047;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.filters button {
+    flex: 1;
+    margin: 0 3px;
+    padding: 8px;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button.active {
+    background: #4CAF50;
+    color: white;
+}
+
+.filters button:hover {
+    background: #d5d5d5;
+}
+
+#taskList {
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 8px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.task:hover {
+    transform: scale(1.02);
+}
+
+.task span {
+    flex: 1;
+}
+
+.task.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.task button.complete {
+    color: green;
+}
+
+.task button.delete {
+    color: red;
+}
